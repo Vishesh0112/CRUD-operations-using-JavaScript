@@ -73,7 +73,7 @@ function onDelete(td) {
 }
 function validate() {
     //isValid = true;
-    if (document.getElementById("fullName").value == "") {
+    if (document.getElementById("fullName").value.trim() == "") {
         isValid = false;
         document.getElementById("fullNameValidationError").classList.remove("hide");
     } else {
